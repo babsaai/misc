@@ -13,7 +13,6 @@ ESSID=`iwconfig $INTERFACE | grep ESSID | cut -d":" -f2 | sed 's/^[^"]*"\|"[^"]*
 if [ "$INTERFACE" == "wlan1" ]; then
   if [ "$SSID" == "$ESSID" ] && [ "$ACTION" == "up" ]; then
     notify-send -t 10000 "Welcome Dear. Starting nasty apps .."
-
     # run qbittorent
     /usr/bin/qbittorrent
   fi
