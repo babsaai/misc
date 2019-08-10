@@ -1,0 +1,6 @@
+# sorthands
+alias.amend=commit --amend
+alias.st=status
+
+# pretty log format (by Nandi)
+alias.gl=log --graph --pretty=format:"%C(auto)%h%d %C(yellow)|%C(cyan)%an%C(yellow)|%C(reset) %s %C(yellow){%C(cyan)%ar%C(yellow)}%C(reset)" --decorate --all
